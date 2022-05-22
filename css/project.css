@@ -1,0 +1,76 @@
+.bruj {
+    background-color: aqua;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: dodgerblue;
+    padding:5px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.header {
+    background-color:gold;
+    color: rgb(0, 195, 255);
+    text-align:center;
+    font-size: 40px;
+    border: 3px solid springgreen ;
+}
+.navbar {
+    background-color:gold;
+    border:solid springgreen;
+    font-size:20px;
+    position: sticky;
+    top: 0px;
+}
+.navbar th {
+    border:solid dodgerblue;
+    padding: 5px;
+}
+
+li {background-color: aqua;}
+
+.fade-in {
+    animation-name: fade-in-animation;
+    animation-duration: 6s;
+}
+header{
+    background-color:gold;
+    color: rgb(0, 195, 255);
+    text-align:center;
+    font-size: 50px;
+    border: 3px solid springgreen ;
+}
+@keyframes fade-in-animation {
+    from {
+        opacity: 0;
+        transform: rotate(-80deg);
+        width:100px;
+    }
+
+    to {
+        opacity: 1;
+        transfrom: rotate(0deg);
+        width:200px;
+    }
+}
+.blink-colour {
+    animation-name: blink-colour-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink-colour-animation {
+    0% {
+        color: springgreen;
+    }
+    50% {
+        color: dodgerblue;
+    }
+}
+
